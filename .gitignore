@@ -87,3 +87,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# images file for dataset
+images
+MNIST_data
+
+.vscode
