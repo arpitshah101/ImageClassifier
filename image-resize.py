@@ -23,9 +23,9 @@ for folder in folderpaths:
     for f in onlyfiles:
         try:
             im = Image.open(folder+"/"+f)
-            im = im.resize((800, 600))
+            im = im.resize((100, 75), Image.ANTIALIAS)
             print f
-            im.save(folder+"/"+f)
+            im.save(folder+"/"+f, quality=90)
             im.close()
         except Exception as e:
             remove(folder+"/"+f)
